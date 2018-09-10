@@ -1,0 +1,3000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundoCor"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".vtSalmos">
+
+    <RelativeLayout
+        android:id="@+id/tituloLivro"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/livro_salmos"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/capitulosTamanho"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textoProgresso"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="30% concluído"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/text12"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tituloLivro"
+        android:layout_above="@id/rodape"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:id="@+id/checkboxes"
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 1"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 2"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 3"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 4"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 5"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 6"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 7"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 8"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 9"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 10"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 11"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 12"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 13"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 14"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 15"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 16"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 17"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 18"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 19"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 20"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 21"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 22"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox23"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 23"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox24"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 24"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox25"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 25"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox26"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 26"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox27"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 27"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox28"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 28"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox29"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 29"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox30"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 30"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox31"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 31"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox32"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 32"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox33"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 33"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox34"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 34"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox35"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 35"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox36"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 36"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox37"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 37"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox38"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 38"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox39"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 39"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox40"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 40"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox41"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 41"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox42"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 42"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox43"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 43"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox44"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 44"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox45"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 45"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox46"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 46"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox47"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 47"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox48"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 48"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox49"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 49"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox50"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 50"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox51"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 51"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox52"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 52"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox53"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 53"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox54"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 54"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox55"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 55"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox56"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 56"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox57"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 57"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox58"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 58"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox59"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 59"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox60"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 60"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox61"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 61"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox62"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 62"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox63"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 63"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox64"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 64"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox65"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 65"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox66"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 66"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox67"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 67"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox68"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 68"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox69"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 69"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox70"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 70"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox71"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 71"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox72"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 72"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox73"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 73"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox74"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 74"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox75"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 75"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox76"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 76"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox77"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 77"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox78"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 78"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox79"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 79"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox80"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 80"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox81"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 81"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox82"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 82"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox83"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 83"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox84"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 84"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox85"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 85"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox86"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 86"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox87"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 87"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox88"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 88"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox89"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 89"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox90"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 90"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox91"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 91"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox92"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 92"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox93"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 93"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox94"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 94"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox95"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 95"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox96"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 96"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox97"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 97"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox98"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 98"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox99"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 99"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox100"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 100"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox101"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 101"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox102"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 102"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox103"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 103"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox104"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 104"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox105"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 105"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox106"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 106"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox107"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 107"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox108"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 108"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox109"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 109"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox110"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 110"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox111"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 111"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox112"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 112"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox113"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 113"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox114"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 114"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox115"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 115"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox116"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 116"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox117"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 117"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox118"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 118"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox119"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 119"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox120"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 120"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox121"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 121"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox122"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 122"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox123"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 123"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox124"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 124"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox125"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 125"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox126"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 126"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox127"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 127"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox128"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 128"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox129"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 129"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox130"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 130"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox131"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 131"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox132"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 132"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox133"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 133"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox134"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 134"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox135"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 135"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox136"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 136"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox137"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 137"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox138"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 138"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox139"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 139"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox140"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 140"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox141"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Salmos 141"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox142"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 142"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox143"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 143"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox144"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 144"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox145"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 145"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox146"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 146"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox147"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 147"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox148"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 148"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox149"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 149"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox150"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Salmos 150"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1120115677806043/3477990834"/>
+
+</RelativeLayout>

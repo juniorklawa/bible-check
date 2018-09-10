@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:weightSum="10"
+    android:background="@color/fundoCor"
+    tools:context=".aVT">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:text="@string/antigo_testamento"
+            android:textColor="@android:color/white"
+            android:textSize="34dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/genesis"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_genesis"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/exodo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_exodo"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/levitico"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/livro_levitico"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/numeros"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_numeros"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/deuteronomio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_deuteronomio"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/josue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_josue"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/juizes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_juizes"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/rute"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_Rute"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/psamuel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_psamuel"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/ssamuel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_ssamuel"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/preis"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_preis"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/sreis"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_sreis"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/pcronicas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_pcrconicas"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/scronicas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_scronicas"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/esdras"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_esdras"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/neemias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_neemias"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/ester"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_ester"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/jo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_jo"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/salmos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_salmos"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/proverbios"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_proverbios"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/eclesiastes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_eclesiastes"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/canticodoscanticos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_cantares"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/isaias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_isaias"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/jeremias"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_jeremias"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/lamentacoesdejeremias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_lamentacoes"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/ezequiel"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_ezequiel"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/daniel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_daniel"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/oseias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_oseias"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/joel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_joel"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/amos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_amos"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/obadias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_obadias"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/jonas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_jonas"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/miqueias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_miqueias"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/naum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_naum"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+
+            <TextView
+                android:id="@+id/habacuque"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_habacuque"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/sofonias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_sofonias"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/ageu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_ageu"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/zacarias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_zacarias"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/malaquias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/livro_malaquias"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+
+
+        <com.google.android.gms.ads.AdView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1120115677806043/3477990834"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

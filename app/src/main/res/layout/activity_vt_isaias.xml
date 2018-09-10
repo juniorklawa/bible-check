@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundoCor"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".vtIsaias">
+
+    <RelativeLayout
+        android:id="@+id/tituloLivro"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/livro_isaias"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/capitulosTamanho"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textoProgresso"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="30% concluído"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/text12"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tituloLivro"
+        android:layout_above="@id/rodape"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:id="@+id/checkboxes"
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Isaías 1"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 2"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 3"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 4"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 5"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 6"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 7"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 8"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 9"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 10"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 11"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 12"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 13"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 14"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 15"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 16"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 17"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 18"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 19"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 20"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 21"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 22"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox23"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 23"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox24"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 24"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox25"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 25"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox26"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 26"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox27"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 27"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox28"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 28"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox29"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 29"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox30"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 30"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox31"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 31"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox32"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 32"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox33"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 33"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox34"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 34"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox35"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 35"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox36"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 36"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox37"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 37"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox38"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 38"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox39"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 39"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox40"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 40"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox41"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 41"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox42"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 42"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox43"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 43"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox44"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 44"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox45"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 45"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox46"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 46"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox47"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 47"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox48"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 48"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox49"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 49"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox50"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 50"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox51"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Isaías 51"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox52"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 52"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox53"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 53"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox54"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 54"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox55"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 55"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox56"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 56"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox57"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 57"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox58"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 58"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox59"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 59"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox60"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 60"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox61"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Isaías 61"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox62"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 62"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox63"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 63"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox64"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 64"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox65"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 65"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox66"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Isaías 66"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1120115677806043/3477990834"/>
+
+</RelativeLayout>

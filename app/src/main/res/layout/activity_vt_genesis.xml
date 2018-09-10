@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundoCor"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".vtGenesis">
+
+    <RelativeLayout
+        android:id="@+id/tituloLivro"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/livro_genesis"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/capitulosTamanho"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textoProgresso"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="30% concluído"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/text12"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tituloLivro"
+        android:layout_above="@id/rodape"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:id="@+id/checkboxes"
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Gênesis 1"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 2"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 3"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 4"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 5"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 6"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 7"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 8"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 9"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 10"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 11"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 12"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 13"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 14"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 15"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 16"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 17"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 18"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 19"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 20"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 21"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 22"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox23"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 23"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox24"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 24"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox25"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 25"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox26"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 26"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox27"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 27"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox28"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 28"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox29"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 29"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox30"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 30"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox31"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 31"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox32"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 32"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox33"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 33"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox34"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 34"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox35"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 35"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox36"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 36"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox37"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 37"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox38"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 38"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox39"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 39"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox40"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 40"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox41"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 41"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox42"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 42"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox43"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 43"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox44"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 44"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox45"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 45"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox46"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 46"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox47"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 47"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox48"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 48"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox49"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 49"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox50"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Gênesis 50"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1120115677806043/3477990834"/>
+
+</RelativeLayout>

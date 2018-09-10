@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.klawapps.bibliaprogresso">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".aCena">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ntAtos" />
+        <activity android:name=".ntMateus" />
+        <activity android:name=".ntMarcos" />
+        <activity android:name=".ntLucas" />
+        <activity android:name=".ntJoao" />
+        <activity android:name=".ntRomanos" />
+        <activity android:name=".ntPrimeiraCorintios" />
+        <activity android:name=".ntSegundaCorintios" />
+        <activity android:name=".ntGalatas" />
+        <activity android:name=".ntEfesios" />
+        <activity android:name=".ntFilipenses" />
+        <activity android:name=".ntColossenses" />
+        <activity android:name=".ntPrimeiraTessalonicenses" />
+        <activity android:name=".ntSegundaTessalonicenses" />
+        <activity android:name=".ntPrimeiraTimotio" />
+        <activity android:name=".ntSegundaTimotio" />
+        <activity android:name=".ntTito" />
+        <activity android:name=".ntFilemom" />
+        <activity android:name=".ntHebreus" />
+        <activity android:name=".ntTiago" />
+        <activity android:name=".ntPrimeiraPedro" />
+        <activity android:name=".ntSegundaPedro" />
+        <activity android:name=".ntPrimeiraJoao" />
+        <activity android:name=".ntSegundaJoao" />
+        <activity android:name=".ntTerceiraJoao" />
+        <activity android:name=".ntJudas" />
+        <activity android:name=".ntApocalipse" />
+        <activity android:name=".aVT" />
+        <activity android:name=".aNT" />
+        <activity android:name=".vtGenesis" />
+        <activity android:name=".vtExodo" />
+        <activity android:name=".vtLevitico" />
+        <activity android:name=".vtNumeros" />
+        <activity android:name=".vtDeuteronomio" />
+        <activity android:name=".vtJosue" />
+        <activity android:name=".vtJuizes" />
+        <activity android:name=".vtRute" />
+        <activity android:name=".vtPSamuel" />
+        <activity android:name=".vtSSamuel" />
+        <activity android:name=".vtPReis" />
+        <activity android:name=".vtSReis" />
+        <activity android:name=".vtPCronicas" />
+        <activity android:name=".vtSCronicas" />
+        <activity android:name=".vtEsdras" />
+        <activity android:name=".vtNeemias" />
+        <activity android:name=".vtEster" />
+        <activity android:name=".vtJo" />
+        <activity android:name=".vtProverbios" />
+        <activity android:name=".vtEclesiastes" />
+        <activity android:name=".vtCanticoDosCanticos" />
+        <activity android:name=".vtSalmos" />
+        <activity android:name=".vtIsaias" />
+        <activity android:name=".vtJeremias" />
+        <activity android:name=".vtLamentacoesDeJeremias" />
+        <activity android:name=".vtEzequiel" />
+        <activity android:name=".vtDaniel" />
+        <activity android:name=".vtOseias" />
+        <activity android:name=".vtJoel" />
+        <activity android:name=".vtAmos" />
+        <activity android:name=".vtObadias" />
+        <activity android:name=".vtJonas" />
+        <activity android:name=".vtMiqueias" />
+        <activity android:name=".vtNaum" />
+        <activity android:name=".vtHabacuque" />
+        <activity android:name=".vtSofonias" />
+        <activity android:name=".vtAgeu" />
+        <activity android:name=".vtZacarias" />
+        <activity android:name=".vtMalaquias"></activity>
+    </application>
+
+</manifest>

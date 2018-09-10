@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundoCor"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+    <RelativeLayout
+        android:id="@+id/tituloLivro"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/livro_lamentacoes"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/capitulosTamanho"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textoProgresso"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="30% concluído"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/text12"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tituloLivro"
+        android:layout_above="@id/rodape"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:id="@+id/checkboxes"
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="Lamentações  1"
+                android:textColor="@color/colorTextoLivros"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Lamentações  2"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Lamentações  3"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Lamentações  4"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@android:color/white"
+                android:text="Lamentações  5"
+                android:textColor="@color/colorTextoLivros"
+                android:textSize="@dimen/capitulosTamanho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1120115677806043/3477990834"/>
+
+</RelativeLayout>
